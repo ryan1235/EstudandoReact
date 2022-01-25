@@ -60,16 +60,15 @@ function Titulo(props) {
 // export default HomePage
 
 export default function PaginaInicial() {
-  const username = 'peas';
+  const username = 'ryan1235';
 
   return (
     <>
       <GlobalStyle />
       <Box
         styleSheet={{
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          backgroundColor: appConfig.theme.colors.primary[500],
-          backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor: 'rgb(0, 0, 0, .655)',
+          backgroundImage: 'url(https://cdn.pixabay.com/photo/2019/01/31/20/52/web-3967926_960_720.jpg)',
           backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
         }}
       >
@@ -85,7 +84,7 @@ export default function PaginaInicial() {
             width: '100%', maxWidth: '700px',
             borderRadius: '5px', padding: '32px', margin: '16px',
             boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-            backgroundColor: appConfig.theme.colors.neutrals[700],
+            backgroundColor: 'rgb(0, 0, 0, .555)',
           }}
         >
           {/* Formulário */}
@@ -135,7 +134,7 @@ export default function PaginaInicial() {
               alignItems: 'center',
               maxWidth: '200px',
               padding: '16px',
-              backgroundColor: appConfig.theme.colors.neutrals[800],
+              backgroundColor: 'rgb(0, 191, 255, 0)',
               border: '1px solid',
               borderColor: appConfig.theme.colors.neutrals[999],
               borderRadius: '10px',
@@ -147,14 +146,15 @@ export default function PaginaInicial() {
               styleSheet={{
                 borderRadius: '50%',
                 marginBottom: '16px',
+                border: 'solid black 4px'
               }}
               src={`https://github.com/${username}.png`}
             />
             <Text
-              variant="body4"
+              variant="boby4"
               styleSheet={{
                 color: appConfig.theme.colors.neutrals[200],
-                backgroundColor: appConfig.theme.colors.neutrals[900],
+                backgroundColor: 'rgb(0, 0, 0, 0)',
                 padding: '3px 10px',
                 borderRadius: '1000px'
               }}
