@@ -67,8 +67,8 @@ export default function PaginaInicial() {
       <GlobalStyle />
       <Box
         styleSheet={{
-          display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor: 'rgb(0, 0, 0, .655)',
-          backgroundImage: 'url(https://cdn.pixabay.com/photo/2019/01/31/20/52/web-3967926_960_720.jpg)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          backgroundImage: 'url(https://user-images.githubusercontent.com/70382532/138322189-2db8df52-9dcb-40a0-88a8-c365466bd33d.gif)',
           backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
         }}
       >
@@ -105,7 +105,7 @@ export default function PaginaInicial() {
               textFieldColors={{
                 neutral: {
                   textColor: appConfig.theme.colors.neutrals[200],
-                  mainColor: appConfig.theme.colors.neutrals[900],
+                  mainColor: appConfig.theme.colors.neutrals[400],
                   mainColorHighlight: appConfig.theme.colors.primary[500],
                   backgroundColor: appConfig.theme.colors.neutrals[800],
                 },
@@ -116,7 +116,7 @@ export default function PaginaInicial() {
               label='Entrar'
               fullWidth
               buttonColors={{
-                contrastColor: appConfig.theme.colors.neutrals["000"],
+                contrastColor: appConfig.theme.colors.neutrals[999],
                 mainColor: appConfig.theme.colors.primary[500],
                 mainColorLight: appConfig.theme.colors.primary[400],
                 mainColorStrong: appConfig.theme.colors.primary[600],
@@ -135,8 +135,7 @@ export default function PaginaInicial() {
               maxWidth: '200px',
               padding: '16px',
               backgroundColor: 'rgb(0, 191, 255, 0)',
-              border: '1px solid',
-              borderColor: appConfig.theme.colors.neutrals[999],
+              border: '3px solid #143067',
               borderRadius: '10px',
               flex: 1,
               minHeight: '240px',
@@ -146,7 +145,7 @@ export default function PaginaInicial() {
               styleSheet={{
                 borderRadius: '50%',
                 marginBottom: '16px',
-                border: 'solid black 4px'
+                border: 'solid #143067 4px'
               }}
               src={`https://github.com/${username}.png`}
             />
