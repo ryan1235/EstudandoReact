@@ -9,4 +9,4 @@ Começanddo no mundo dos framework com o meu primeiro projeto em React!
 
 ### Demo
 
-https://ryan1235.github.io/estudandojavaS/
+https://estudando-react-three.vercel.app/
