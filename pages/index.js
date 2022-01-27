@@ -1,4 +1,6 @@
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
+import react from 'react';
+import { useRouter } from 'next/router'
 import appConfig from '../config.json';
 
 function GlobalStyle() {
@@ -60,8 +62,9 @@ function Titulo(props) {
 // export default HomePage
 
 export default function PaginaInicial() {
-  const username = 'ryan1235';
-
+  //const username = 'ryan1235';
+    const[username, setUsername] = react.useState('ryanluca')
+    const roteamento = useRouter()
   return (
     <>
       <GlobalStyle />
@@ -90,6 +93,12 @@ export default function PaginaInicial() {
           {/* Formulário */}
           <Box
             as="form"
+            onSubmit={function(infoseventos){
+              infoseventos.preventDefault()
+              console.log('ouve uma mudança')
+              roteamento.push('/chat')
+
+            }}
             styleSheet={{
               display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
               width: { xs: '100%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
@@ -101,6 +110,11 @@ export default function PaginaInicial() {
             </Text>
 
             <TextField
+              value={username}
+              onChange={function(event){
+                const valor = event.target.value
+                setUsername(valor)
+              }}
               fullWidth
               textFieldColors={{
                 neutral: {
